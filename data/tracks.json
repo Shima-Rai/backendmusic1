@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Sunny Beats",
+    "artist": "DJ Nova",
+    "mood": "happy",
+    "bpm": 120
+  },
+  {
+    "id": 2,
+    "title": "Midnight Tears",
+    "artist": "Luna",
+    "mood": "sad",
+    "bpm": 70
+  },
+  {
+    "id": 3,
+    "title": "Energy Rush",
+    "artist": "Pulse",
+    "mood": "energetic",
+    "bpm": 135
+  },
+  {
+    "id": 4,
+    "title": "Peaceful Waves",
+    "artist": "Zen Flow",
+    "mood": "calm",
+    "bpm": 60
+  },
+  {
+    "id": 5,
+    "title": "Happy Ride",
+    "artist": "Smile Crew",
+    "mood": "happy",
+    "bpm": 118
+  }
+]
