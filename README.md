@@ -1,25 +1,8 @@
-# 🎵 Smart Playlist Matcher API
+# Smart Playlist Matcher API
 
 A music recommendation API that intelligently matches songs based on **mood** and **BPM (beats per minute)**. Built with Express.js, this backend service analyzes user preferences and returns a ranked list of tracks that best match the given criteria.
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Docker Deployment](#docker-deployment)
-- [Example Request/Response](#example-requestresponse)
-
----
-
-## 🎯 Overview
+## Overview
 
 The **Smart Playlist Matcher** is a backend API that recommends music tracks based on:
 
@@ -33,18 +16,18 @@ The system uses a **scoring algorithm** to rank tracks, prioritizing:
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🎭 **Mood-based filtering** - Match songs to emotional states
-- 🎼 **BPM matching** - Find tracks with similar tempo
-- 📊 **Smart scoring algorithm** - Ranks results by relevance
-- 🚀 **RESTful API** - Simple JSON-based interface
-- 🐳 **Docker ready** - Containerized for easy deployment
-- 📦 **Lightweight** - JSON-based data storage
+- **Mood-based filtering** - Match songs to emotional states
+- **BPM matching** - Find tracks with similar tempo
+- **Smart scoring algorithm** - Ranks results by relevance
+- **RESTful API** - Simple JSON-based interface
+- **Docker ready** - Containerized for easy deployment
+- **Lightweight** - JSON-based data storage
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### Scoring Algorithm
 
@@ -71,7 +54,7 @@ Score = (Mood Match: 50 or 0) + (BPM Close: 30 or 0) - |BPM Difference|
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Runtime**: Node.js (v18+)
 - **Framework**: Express.js
@@ -81,7 +64,7 @@ Score = (Mood Match: 50 or 0) + (BPM Close: 30 or 0) - |BPM Difference|
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 musics/
@@ -107,7 +90,7 @@ musics/
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -135,12 +118,12 @@ musics/
 
 4. **Verify it's running**
    ```
-   🚀 Server running at http://localhost:5000
+    Server running at http://localhost:5000
    ```
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Run Locally
 
@@ -163,7 +146,7 @@ docker-compose up -d
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Base URL
 ```
@@ -175,7 +158,7 @@ http://localhost:5000
 
 **Response:**
 ```
-🎵 Smart Playlist Matcher API is running
+Smart Playlist Matcher API is running
 ```
 
 ### 2. Get Recommendations
@@ -230,7 +213,7 @@ http://localhost:5000
 
 ---
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 The project includes Docker support for easy deployment.
 
@@ -255,7 +238,7 @@ For complete Docker documentation, see **[Docker.md](Docker.md)**.
 
 ---
 
-## 📝 Example Request/Response
+##  Example Request/Response
 
 ### Using cURL
 
@@ -300,7 +283,7 @@ fetch('http://localhost:5000/api/recommend', {
 
 ---
 
-## 📊 Available Tracks
+##  Available Tracks
 
 The system currently includes 5 sample tracks:
 
@@ -316,7 +299,7 @@ To add more tracks, edit `backend/data/tracks.json`.
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -325,42 +308,3 @@ To add more tracks, edit `backend/data/tracks.json`.
 | `PORT` | `5000` | Server port |
 | `NODE_ENV` | `development` | Environment mode |
 
-### Modify Port
-
-```bash
-PORT=3000 node server.js
-```
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
----
-
-## 👤 Author
-
-**shima418**
-
----
-
-## 🙏 Acknowledgments
-
-- Express.js community
-- Node.js team
-- Docker documentation
-
----
-
-**Built with ❤️ for music lovers**
