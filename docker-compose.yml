@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  music-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: music-backend
+    ports:
+      - "5000:5000"  # Adjust port if your app uses a different one
+    environment:
+      - NODE_ENV=production
+      # Add your environment variables here
+      # - DATABASE_URL=your_database_url
+      # - API_KEY=your_api_key
+    volumes:
+      - ./data:/app/data  # Mount data directory for persistence
+    restart: unless-stopped
+    networks:
+      - music-network
+
+networks:
+  music-network:
+    driver: bridge
